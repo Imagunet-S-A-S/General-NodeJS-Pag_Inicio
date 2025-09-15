@@ -10,12 +10,12 @@ interface AppLink {
 }
 
 const apps: AppLink[] = [
-  { name: "GLPI", url: "https://demos.imagunet.com/glpi/", imageSrc: "/glpi.png" },
-  { name: "Zabbix", url: "https://demos.imagunet.com/zabbix/", imageSrc: "/zabbix.png" },
-  { name: "Wazuh", url: "https://demos.imagunet.com/wazuh", imageSrc: "/wazuh.png" },
-  { name: "Airflow", url: "http://3.212.197.9:30813/home", imageSrc: "/airflow.png" },
-  { name: "Grafana", url: "https://demos.imagunet.com/grafana", imageSrc: "/grafana.png" },
-  { name: "NTOP", url: "https://demos.imagunet.com:5000/lua", imageSrc: "/ntop.png" },
+  //{ name: "GLPI", url: "https://demos.imagunet.com/glpi/", imageSrc: "/glpi.png" },
+  { name: "Zabbix", url: "https://axon.alianzateam.com/zabbix/", imageSrc: "/zabbix.png" },
+  //{ name: "Wazuh", url: "https://demos.imagunet.com/wazuh", imageSrc: "/wazuh.png" },
+  //{ name: "Airflow", url: "http://3.212.197.9:30813/home", imageSrc: "/airflow.png" },
+  { name: "Grafana", url: "https://axon.alianzateam.com/grafana/", imageSrc: "/grafana.png" },
+  //{ name: "NTOP", url: "https://demos.imagunet.com:5000/lua", imageSrc: "/ntop.png" },
 ];
 
 const Dashboard: React.FC = () => {
@@ -29,7 +29,7 @@ const Dashboard: React.FC = () => {
     return (
       <Box
         sx={{
-          background: "linear-gradient(135deg, #1565c0 0%, #ffffff 100%)",
+          background: "linear-gradient(135deg, #8BC34A 0%, #ffffff 100%)",
           minHeight: "100vh",
           display: "flex",
           flexDirection: isMobile ? "column" : "row", // Cambia el layout en móviles
@@ -41,7 +41,7 @@ const Dashboard: React.FC = () => {
       >
         {/* Logo y Mensaje */}
         <Box sx={{ width: isMobile ? "100%" : "40%", mb: isMobile ? 3 : 0 }}>
-          <Box component="img" src="/logo.png" alt="Logo" sx={{ width: isMobile ? 200 : 300, height: "auto" }} />
+          <Box component="img" src="/Alianza-logo.png" alt="Logo" sx={{ width: isMobile ? 200 : 300, height: "auto" }} />
           <Typography variant={isMobile ? "h6" : "h5"} sx={{ mt: 2, color: "white" }}>
             Bienvenido a la página índice 
           </Typography>
