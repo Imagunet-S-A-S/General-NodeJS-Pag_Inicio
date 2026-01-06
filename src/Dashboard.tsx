@@ -13,7 +13,7 @@ const apps: AppLink[] = [
   { name: "GLPI", url: "https://demos.imagunet.com/glpi/", imageSrc: "/glpi.png" },
   { name: "Zabbix", url: "https://demos.imagunet.com/zabbix/", imageSrc: "/zabbix.png" },
   { name: "Wazuh", url: "https://demos.imagunet.com/wazuh", imageSrc: "/wazuh.png" },
-  { name: "Airflow", url: "http://3.212.197.9:30813/home", imageSrc: "/airflow.png" },
+  { name: "Airflow", url: "http://airflow.imagunet.com", imageSrc: "/airflow.png" },
   { name: "Grafana", url: "https://demos.imagunet.com/grafana", imageSrc: "/grafana.png" },
   { name: "NTOP", url: "https://demos.imagunet.com:5000/", imageSrc: "/ntop.png" },
 ];
