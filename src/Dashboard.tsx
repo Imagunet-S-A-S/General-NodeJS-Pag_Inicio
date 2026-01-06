@@ -15,7 +15,7 @@ const apps: AppLink[] = [
   { name: "Wazuh", url: "https://demos.imagunet.com/wazuh", imageSrc: "/wazuh.png" },
   { name: "Airflow", url: "http://3.212.197.9:30813/home", imageSrc: "/airflow.png" },
   { name: "Grafana", url: "https://demos.imagunet.com/grafana", imageSrc: "/grafana.png" },
-  { name: "NTOP", url: "https://demos.imagunet.com:5000/lua", imageSrc: "/ntop.png" },
+  { name: "NTOP", url: "https://demos.imagunet.com:5000/", imageSrc: "/ntop.png" },
 ];
 
 const Dashboard: React.FC = () => {
