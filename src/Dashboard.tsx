@@ -10,12 +10,8 @@ interface AppLink {
 }
 
 const apps: AppLink[] = [
-  { name: "GLPI", url: "https://demos.imagunet.com/glpi/", imageSrc: "/glpi.png" },
-  { name: "Zabbix", url: "https://demos.imagunet.com/zabbix/", imageSrc: "/zabbix.png" },
-  { name: "Wazuh", url: "https://demos.imagunet.com/wazuh", imageSrc: "/wazuh.png" },
-  { name: "Airflow", url: "http://airflow.imagunet.com", imageSrc: "/airflow.png" },
-  { name: "Grafana", url: "https://demos.imagunet.com/grafana", imageSrc: "/grafana.png" },
-  { name: "NTOP", url: "https://demos.imagunet.com:5000/", imageSrc: "/ntop.png" },
+  { name: "Zabbix", url: "http://10.81.11.137/zabbix", imageSrc: "/zabbix.png" },
+  { name: "Grafana", url: "http://10.81.11.137/grafana", imageSrc: "/grafana.png" },
 ];
 
 const Dashboard: React.FC = () => {
@@ -29,7 +25,7 @@ const Dashboard: React.FC = () => {
     return (
       <Box
         sx={{
-          background: "linear-gradient(135deg, #1565c0 0%, #ffffff 100%)",
+          background: "linear-gradient(100deg, #ffffff 0%, #375fca 100%)",
           minHeight: "100vh",
           display: "flex",
           flexDirection: isMobile ? "column" : "row", // Cambia el layout en móviles
@@ -41,11 +37,11 @@ const Dashboard: React.FC = () => {
       >
         {/* Logo y Mensaje */}
         <Box sx={{ width: isMobile ? "100%" : "40%", mb: isMobile ? 3 : 0 }}>
-          <Box component="img" src="/logo.png" alt="Logo" sx={{ width: isMobile ? 200 : 300, height: "auto" }} />
-          <Typography variant={isMobile ? "h6" : "h5"} sx={{ mt: 2, color: "white" }}>
+          <Box component="img" src="/Logo InterNexa RGB-Fondos Claros.png" alt="Logo" sx={{ width: isMobile ? 200 : 300, height: "auto" }} />
+          <Typography variant={isMobile ? "h6" : "h5"} sx={{ mt: 2, color: "black" }}>
             Bienvenido a la página índice 
           </Typography>
-          <Typography variant={isMobile ? "body1" : "h6"} sx={{ mt: 1, color: "white" }}>
+          <Typography variant={isMobile ? "body1" : "h6"} sx={{ mt: 1, color: "black" }}>
             Seleccione una de las siguientes opciones:
           </Typography>
         </Box>
