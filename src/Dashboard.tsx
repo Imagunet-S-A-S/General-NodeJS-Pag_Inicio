@@ -10,12 +10,12 @@ interface AppLink {
 }
 
 const apps: AppLink[] = [
-  { name: "GLPI", url: "https://demos.imagunet.com/glpi/", imageSrc: "/glpi.png" },
-  { name: "Zabbix", url: "https://demos.imagunet.com/zabbix/", imageSrc: "/zabbix.png" },
-  { name: "Wazuh", url: "https://demos.imagunet.com/wazuh", imageSrc: "/wazuh.png" },
-  { name: "Airflow", url: "http://airflow.imagunet.com", imageSrc: "/airflow.png" },
-  { name: "Grafana", url: "https://demos.imagunet.com/grafana", imageSrc: "/grafana.png" },
-  { name: "NTOP", url: "https://demos.imagunet.com:5000/", imageSrc: "/ntop.png" },
+  //{ name: "GLPI", url: "https://demos.imagunet.com/glpi/", imageSrc: "/glpi.png" },
+  { name: "Zabbix", url: "http://192.168.13.5/zabbix/", imageSrc: "/zabbix.png" },
+  //{ name: "Wazuh", url: "https://demos.imagunet.com/wazuh", imageSrc: "/wazuh.png" },
+  //{ name: "Airflow", url: "http://airflow.imagunet.com", imageSrc: "/airflow.png" },
+  { name: "Grafana", url: "http://192.168.13.5/grafana", imageSrc: "/grafana.png" },
+  //{ name: "NTOP", url: "https://demos.imagunet.com:5000/", imageSrc: "/ntop.png" },
 ];
 
 const Dashboard: React.FC = () => {
@@ -29,7 +29,7 @@ const Dashboard: React.FC = () => {
     return (
       <Box
         sx={{
-          background: "linear-gradient(135deg, #1565c0 0%, #ffffff 100%)",
+          background: "linear-gradient(135deg, #ffffff 0%, #992121 100%)",
           minHeight: "100vh",
           display: "flex",
           flexDirection: isMobile ? "column" : "row", // Cambia el layout en móviles
